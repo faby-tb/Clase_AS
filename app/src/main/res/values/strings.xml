@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="email_required">Email is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="name_required">Name is required</string>
+    <string name="logged_in">Logged in</string>
+    <string name="no_match">No match</string>
+    <string name="login">Login</string>
+    <string name="go_to_register">Go To Register</string>
+    <string name="register">Register</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="name">Name</string>
+    <string name="registered_in">Registered</string>
+    <string name="invalid_email">Invalid Email</string>
+</resources>
