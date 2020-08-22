@@ -74,6 +74,5 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private void gotoLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
-        finish();
     }
 }

@@ -15,4 +15,9 @@
     <string name="name">Nombre</string>
     <string name="registered_in">Registrado</string>
     <string name="invalid_email">Correo no válido</string>
+    <string name="loggout">Cerrar Sesión</string>
+
+    <string name="task_name">Nombre de la tarea</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
 </resources>

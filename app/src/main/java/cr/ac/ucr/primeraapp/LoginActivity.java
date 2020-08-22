@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import cr.ac.ucr.primeraapp.utils.AppPreferences;
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText etEmail;
@@ -52,9 +54,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         // TODO: Se tiene que sustituir con la logica de autenticación de la aplicacion
         if(email.equalsIgnoreCase("admin@email.com") && password.equalsIgnoreCase("1234")){
-
-            // TODO: enviarlo al main activity
             // TODO: almacenar en el storage el usuario logueado
+
+            AppPreferences.getInstance(this).put(AppPreferences.Keys.IS_LOGGED_IN, true);
 
             Toast.makeText(this, getString(R.string.logged_in), Toast.LENGTH_SHORT).show();
 
@@ -69,7 +71,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void gotoRegister() {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
-        finish();
     }
 
 }
